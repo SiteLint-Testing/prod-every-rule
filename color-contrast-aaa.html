@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Contrast AAA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* white background */
+        }
+        .normal-text {
+            color: #888888; /* light gray text */
+            font-size: 16px;
+        }
+        .large-text {
+            color: #aaaaaa; /* slightly darker gray text */
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+
+<script>(function(w,d,s,a,m,t){a = d.createElement(s);m = d.getElementsByTagName(s)[0];a.defer = true;a.id = 'auditor_app';a.dataset.autorun = '';a.dataset.cfasync = 'false';a.src = 'https://stage-auditor.sitelint.com/auditor.bundle.js?tokenId=f1c099211379e038cff26cbdeaaf9918eb39aea3978c0648935080e02f36f950';m.parentNode.insertBefore(a, m);
+})(window, document, 'script');</script>
+
+</head>
+<body>
+
+    <label for="page-select">Select a page:</label>
+<select id="page-select" onchange="navigateToPage()">
+    <option value="index.html">index</option>
+    <option value="alt-text-filename.html">alt text filename</option>
+    <option value="aria-hidden-false.html">aria hidden false</option>
+    <option value="aria-role-dialog.html">aria role dialog</option>
+    <option value="audio-video-captions.html">audio video captions</option>
+    <option value="autoplay-audio-video.html">autoplay audio video</option>
+    <option value="background-set-to-white.html">background set to white</option>
+    <option value="capital-letters.html">capital letters</option>
+    <option value="color-contrast-aa.html">color contrast aa</option>
+    <option value="color-contrast-aaa.html">color contrast aaa</option>
+    <option value="color-name.html">color name</option>
+    <option value="content-editable-missing-attributes.html">content editable missing attributes</option>
+    <option value="contentinfo-landmark-only-one.html">contentinfo landmark only one</option>
+    <option value="css-images-convey-information.html">css images convey information</option>
+    <option value="duplicated-id.html">duplicated id</option>
+    <option value="elements-in-head.html">elements in head</option>
+    <option value="empty-title-attribute.html">empty title attribute</option>
+    <option value="flash-content.html">flash content</option>
+    <option value="flickering.html">flickering</option>
+    <option value="font-style-italic.html">font style italic</option>
+    <option value="h1-must-be-defined.html">h1 must be defined</option>
+    <option value="headings-sibling-unique.html">headings sibling unique</option>
+    <option value="horizontal-rule.html">horizontal rule</option>
+    <option value="img-empty-alt-in-link.html">img empty alt in link</option>
+    <option value="incorrect-technique-for-hiding-content.html">incorrect technique for hiding content</option>
+    <option value="inaccessible-svg.html">inaccessible svg</option>
+    <option value="invalid-attribute-dir-value.html">invalid attribute dir value</option>
+    <option value="label-duplicated-content-title.html">label duplicated content title</option>
+    <option value="link-with-unclear-purpose.html">link with unclear purpose</option>
+    <option value="links-language-destination.html">links language destination</option>
+    <option value="links-new-window-mark.html">links new window mark</option>
+    <option value="links-same-content-different-url.html">links same content different url</option>
+    <option value="main-element-only-one.html">main element only one</option>
+    <option value="main-landmark-must-be-top-level.html">main landmark must be top level</option>
+    <option value="meaningful-content-sequence.html">meaningful content sequence</option>
+    <option value="minimum-font-size.html">minimum font size</option>
+    <option value="missing-alt-attribute.html">missing alt attribute</option>
+    <option value="missing-href.html">missing href</option>
+    <option value="misused-aria.html">misused aria</option>
+    <option value="motion-actuation.html">motion actuation</option>
+    <option value="reflow.html">reflow</option>
+    <option value="svg-without-accessible-description.html">svg without accessible description</option>
+    <option value="target-size-minimum.html">target size minimum</option>
+    <option value="unclear-anchor-url.html">unclear anchor url</option>
+    <option value="unclear-image-description.html">unclear image description</option>
+    <option value="zoom-disabled.html">zoom disabled</option>
+</select>
+
+<script>
+    function navigateToPage() {
+        var select = document.getElementById("page-select");
+        var selectedValue = select.options[select.selectedIndex].value;
+        window.location.href = selectedValue;
+    }
+</script>
+
+    
+    <h1>Color Contrast AAA</h1>
+    <p class="normal-text">This is normal text with insufficient contrast for AAA standards.</p>
+    <p class="large-text">This is large text with insufficient contrast for AAA standards.</p>
+
+<a href="https://platform-staging.sitelint.site/audits/sites/site/reports?token=f1c099211379e038cff26cbdeaaf9918eb39aea3978c0648935080e02f36f950&url=https:%2F%2Fsitelint-testing.github.io%2Fevery-rule%2Fcolor-contrast-aaa.html#tab_failed_reports" target="_blank">View SiteLint Report</a>
+
+    
+</body>
+</html>
