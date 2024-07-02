@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation</title>
+<style>
+    /* CSS for animation */
+    .animated-box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: bounce 1s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+</style>
+<script>
+    // JavaScript for animation
+    (function(w,d,s,a,m,t){
+        a = d.createElement(s);
+        m = d.getElementsByTagName(s)[0];
+        a.defer = true;
+        a.id = 'auditor_app';
+        a.dataset.autorun = '';
+        a.dataset.cfasync = 'false';
+        a.src = 'https://stage-auditor.sitelint.com/auditor.bundle.js?tokenId=f1c099211379e038cff26cbdeaaf9918eb39aea3978c0648935080e02f36f950';
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script');
+</script>
+</head>
+<body>
+<h1>Animation</h1>
+<div class="animated-box"></div>
+</body>
+</html>
